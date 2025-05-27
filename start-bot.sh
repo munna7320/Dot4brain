@@ -23,7 +23,7 @@ echo
 
 # Step 2: Fetch remote credentials from GitHub
 GITHUB_TOKEN="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"
-RAW_URL="https://raw.githubusercontent.com/munna7320/dotxbrain-auth/refs/heads/main/auth.txt?token=GHSAT0AAAAAADELJUI3637UGZA2KZKCIGAO2BUITCQ"
+RAW_URL="https://raw.githubusercontent.com/munna7320/dotxbrain-auth/main/auth.txt"
 
 auth_data=$(curl -s -H "Authorization: token $GITHUB_TOKEN" "$RAW_URL")
 remote_user=$(echo "$auth_data" | grep userid | cut -d'=' -f2 | tr -d '\r')
