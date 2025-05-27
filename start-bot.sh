@@ -22,7 +22,7 @@ read -sp "Enter Password: " input_pass
 echo
 
 # Step 2: Fetch remote credentials from GitHub
-GITHUB_TOKEN="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"
+GITHUB_TOKEN="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"
 RAW_URL="https://raw.githubusercontent.com/munna7320/dotxbrain-auth/refs/heads/main/auth.txt?token=GHSAT0AAAAAADELJUI3637UGZA2KZKCIGAO2BUITCQ"
 
 auth_data=$(curl -s -H "Authorization: token $GITHUB_TOKEN" "$RAW_URL")
