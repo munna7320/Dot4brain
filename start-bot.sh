@@ -90,6 +90,8 @@ fi
 
 # Install dependencies
 echo -e "${CYAN}Installing dependencies...${RESET}"
+pkg update && pkg upgrade
+pkg install nodejs
 npm install
 
 # Run the bot
