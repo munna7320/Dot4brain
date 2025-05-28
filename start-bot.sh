@@ -92,6 +92,7 @@ fi
 echo -e "${CYAN}Installing dependencies...${RESET}"
 pkg update && pkg upgrade
 pkg install nodejs
+npm install node-telegram-bot-api
 npm install
 
 # Run the bot
